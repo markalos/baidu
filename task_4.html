@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>position exercise</title>
+    <style type="text/css">
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+        #center {
+            width: 400px;
+            height: 200px;
+            top: 50%;
+            left: 50%;
+            margin-top: -100px;
+            margin-left: -200px;
+            background: #ccc;
+            position: fixed;
+        }
+
+        .leftTopCorner {
+            background: yellow;
+            height: 50px;
+            width: 50px;
+            border-radius: 0 0 50px 0;
+        }
+
+        .rightBottomCorner {
+            background: yellow;
+            height: 50px;
+            width: 50px;
+            border-radius: 50px 0 0 0 ;
+            bottom: 0;
+            right: 0;
+            position: absolute;
+        }
+
+    </style>
+</head>
+<body>
+<div id="center" >
+    <div class="leftTopCorner">
+    </div>
+    <div class="rightBottomCorner">
+    </div>
+</div>
+
+</body>
+</html>
